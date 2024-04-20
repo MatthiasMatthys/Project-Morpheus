@@ -92,5 +92,13 @@ p {
     .advicecontainer{
         width: 80%;
     }
+    .bottom-image {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        /* If you want the image to maintain its aspect ratio */
+        /* height: auto; */
+      }
     
 }
