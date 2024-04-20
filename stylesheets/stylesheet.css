@@ -89,8 +89,12 @@ p {
         display: block;
         height: 75%;
     }
+    .container{
+    }
     .advicecontainer{
+        padding-top: 75px;
         width: 80%;
+        height: 100%;
     }
     .bottom-image {
         position: absolute;
@@ -99,6 +103,25 @@ p {
         width: 100%;
         /* If you want the image to maintain its aspect ratio */
         /* height: auto; */
+      }
+      .koala{
+        position: absolute;
+        top: -20%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .button{
+        background-color: #04AA6D; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
       }
     
 }
