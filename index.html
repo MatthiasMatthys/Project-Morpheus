@@ -15,9 +15,12 @@
 <body>
 <div class="container">    
     <div class="advicecontainer">
-        <p id="sliptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <h1>Puzzle 1</h1>
+        <p id="sliptext">00001011 00001111 00000001 00001100 00000001</p>
         <img class="koala" src="./images/koala2.png" width="300px" alt="koala">
-        <button class="button">TEST</button>
+        <input id="binaryInput" type="text" placeholder="....." style="letter-spacing:1cap;width: 38%;text-align: center;font-size: large;display: block;"></input>
+        <button class="button" onclick="checkInput()">Submit</button>
+        <!-- Button to trigger the popup -->
     </div>
     <div>
         <img src="./images/bee.png" height="120px" alt="bee">     
@@ -26,6 +29,17 @@
         <img style="transform: rotate(25deg);" src="./images/paris.png" height="150px" alt="paris">       
         <img class="bottom-image" width="300px" src="./images/taylor.png" alt="taylor">     
     </div>      
+</div>
+
+<!-- Popup container -->
+<div id="popup" class="popup">
+    <!-- Close button -->
+ <span class="close" onclick="togglePopup()">&times;</span>
+    <!-- Popup content -->
+    <h2>Good to see you!</h2>
+    <p id="binaryMessage">Congratulations on finding your way here! To proceed further and unlock the locations of the presents, you must give me the result (9 characters long) of the puzzle!</p>
+    <!-- <input id="loginInput" type="text"></inpu>
+    <button class="button">Check puzzle answer</button> -->
 </div>
   
 </body>
