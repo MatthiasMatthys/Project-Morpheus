@@ -117,8 +117,6 @@ input{
         display: block;
         height: 75%;
     }
-    .container{
-    }
     .advicecontainer{
         padding-top: 75px;
         width: 80%;
@@ -193,6 +191,11 @@ input{
         top: 10px; /* Position it 10px from the top */
         right: 10px; /* Position it 10px from the right */
         cursor: pointer; /* Add a pointer cursor */
+    }
+
+    .giftlocation{
+        color:red;
+        font-size: medium;
     }
     
 }
