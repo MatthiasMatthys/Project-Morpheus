@@ -173,6 +173,9 @@ input{
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
         z-index: 9999; /* Set a high z-index */
         text-align: center; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     /* Overlay */
     .overlay {
@@ -196,6 +199,12 @@ input{
     .giftlocation{
         color:red;
         font-size: medium;
+    }
+
+    .numbercontainer input{
+        width: 8px;
+        margin-right: 5px; /* Optional: Adjust spacing between inputs */
+        display: inline-block;
     }
     
 }

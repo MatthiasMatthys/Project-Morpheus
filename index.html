@@ -13,7 +13,7 @@
 
 </head>
 <body>
-<div class="container">    
+<div id="puzzle1container" class="container">
     <div class="advicecontainer">
         <h1>Puzzle 1</h1>
         <p id="sliptext">00001011 00001111 00000001 00001100 00000001</p>
@@ -31,14 +31,63 @@
     </div>      
 </div>
 
+<div id="puzzle2container" class="container" style="display: none;">    
+    <div class="advicecontainer">
+        <h1>Puzzle 2</h1>
+        <ul style="list-style-type: none;">
+            <li>How long do the lights sparkle on the Eiffel Tower?</li>
+            <li>What is the longest time we have spent in bed in hours?</li>
+            <li>What is my favorite number? (tip: ka-chow!)</li>
+        </ul>
+        <img class="koala" src="./images/koala2.png" width="300px" alt="koala">
+        <div class="numbercontainer">
+            <form>
+                <label for="numberInput">Enter a number between 0 and 9 for each input:</label><br>
+                <input id="inputnumber1" type="number" min="0" max="9" maxlength="1" placeholder="0" pattern="[0-9]*" style="width: 10px;"></input>
+                <input id="inputnumber2" type="number" min="0" max="9" maxlength="1" placeholder="0" style="width: 10px;"></input>
+                <input id="inputnumber3" type="number" min="0" max="9" maxlength="1" placeholder="0" style="width: 10px;"></input>
+                <input id="inputnumber4" type="number" min="0" max="9" maxlength="1" placeholder="0" style="width: 10px;"></input>
+                <input id="inputnumber5" type="number" min="0" max="9" maxlength="1" placeholder="0" style="width: 10px;"></input>
+            </form>
+            <button class="button" onclick="checkInput2()">Submit</button>
+        </div>
+        <!-- Button to trigger the popup -->
+    </div>   
+    <div>
+        <img src="./images/bee.png" height="120px" alt="bee">     
+    </div>
+    <div>
+        <img style="transform: rotate(25deg);" src="./images/paris.png" height="150px" alt="paris">       
+        <img class="bottom-image" width="300px" src="./images/taylor.png" alt="taylor">     
+    </div>   
+</div>
+
+
 <!-- Popup container -->
-<div id="popup" class="popup">
+<div id="popup" class="popup" style="display: none;">
     <!-- Close button -->
  <span class="close" onclick="togglePopup()">&times;</span>
     <!-- Popup content -->
-    <h1 id="popup-title">Good to see you!</h2>
+    <h1 id="popup-title"></h1>
     <p id="binaryMessage"></p>
+    <img id="wrong1" style="display: none;" src="./images/wrong.jpg" height="200px">
         <p id="gift1location" class="giftlocation"></p>
+    <button style="display: none;" class="button" id="navNextPuzzle" onclick="showNextPuzzle()">Next puzzle =></button>
+    </div>
+    <!-- <input id="loginInput" type="text"></inpu>
+    <button class="button">Check puzzle answer</button> -->
+</div>
+
+<!-- Popup container -->
+<div id="popup2" class="popup" style="display: none;">
+    <!-- Close button -->
+ <span class="close" onclick="togglePopup2()">&times;</span>
+    <!-- Popup content -->
+    <h1 id="popup-title2"></h1>
+    <p id="binaryMessage2"></p>
+    <img id="wrong2" style="display: none;" src="./images/wrong.jpg" height="200px">
+        <p id="gift2location" class="giftlocation"></p>
+        <p id="gift3location" style="color: black; font-size: small; display: none;">Er is ook nog een klein 3de cadeaux die ik helaas niet kon verstoppen. Je zal eens lief in mijn oogjes mogen kijken om het te krijgen :)</p>
     </div>
     <!-- <input id="loginInput" type="text"></inpu>
     <button class="button">Check puzzle answer</button> -->
